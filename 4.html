@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function highAndLow(numbers) {
+
+        let max = Math.min(numbers.split(' ').map(t=> Number(t))).toString()
+        let min = Math.max(numbers.split(' ').map(t=> Number(t))).toString()
+
+
+        /*let min = numbers.split(' ').map(t=> Number(t)).sort().shift().toString()
+        let max = numbers.split(' ').map(t=> Number(t)).sort().pop().toString()
+        console.log(typeof(numbers.split(' ').map(t=> Number(t))).sort().shift())
+        console.log(numbers.split(' ').map(t=> Number(t)))
+        console.log(numbers.split(' ').map(t=> Number(t)).sort())
+        console.log(numbers.split(' ').map(t=> Number(t)).sort().shift())
+        console.log(numbers.split(' ').map(t=> Number(t)).sort().shift().toString())*/
+        console.log(max + ' ' + min)
+        return (max + ' ' + min)
+    }
+
+    highAndLow('10 55 122 -3 -7 15')
+
+</script>
+</body>
+</html>

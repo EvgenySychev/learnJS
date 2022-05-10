@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function findShort(s){
+     let arr = s.split(' ')
+        let str=arr[0].length
+        for (let i=0; i<arr.length; i++) {
+            if (arr[i].length<str) {
+                str= arr[i].length
+            }
+        }
+        return (str)
+    }
+
+    findShort('sfdgsdfhgpdf fdghd kfjhgdjk kk kdfjhgld')
+
+</script>
+</body>
+</html>
