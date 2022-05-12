@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+
+
+    // return masked string
+    function maskify(cc) {
+
+        let str = ''
+        if (cc.length>4) {
+            for (let i=0;i<cc.length-4;i++) {str += '#'}
+            for (let i=cc.length-4; i<cc.length; i++) {str += cc[i]}
+        } else {
+            for (let i=0; i<cc.length;i++) {str += cc[i]}
+        }
+        return (str)
+
+    }
+
+
+    //Test.assertEquals(maskify('4556364607935616'), '############5616');
+
+
+</script>
