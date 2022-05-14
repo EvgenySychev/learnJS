@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+
+
+    function XO(str) {
+        let x=0
+        let o=0
+        let result = true
+        for (let i=0; i<str.length;i++) {
+            if (str[i].toLowerCase()=== 'x') {
+                x++
+            } else if (str[i].toLowerCase()=== 'o') {
+                o++
+            }
+        }
+        x===o ? result=true : result=false
+        return result
+    }
+
+
+</script>
+//XO("ooxXm") => true
