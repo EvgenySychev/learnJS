@@ -2,10 +2,10 @@
 // числа (неопределённое кол-во) и возвращает их сумму (rest).
 
 export function sum(...nums: Array<number>): number {
-        /*let result = 0;
+        let result = 0;
         for (let num of nums) {
             result += num}
-        return result;*/
+        return result;
 
     };
 
@@ -98,10 +98,10 @@ export function sumFirstNumbers(N: number): number {
 export function getBanknoteList(amountOfMoney: number): Array<number> {
     const banknotes = [1000, 500, 100, 50, 20, 10, 5, 2, 1]
     let result = []
-    for (let i=0;i<banknotes.length;i++)
-    while (amountOfMoney > banknotes[i]) {
-       amountOfMoney = amountOfMoney - banknotes[i]
-       result.push(banknotes[i])}
-
+    for (let i=0;i<banknotes.length;i++) {
+        while (amountOfMoney >= banknotes[i]) {
+            amountOfMoney = amountOfMoney - banknotes[i]
+            result.push(banknotes[i])}
+    }
     return result
 }
