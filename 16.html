@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+
+    function solution(number){
+        let arr =[]
+        for (let i =0; i<number;i++) {
+            arr.push(i)
+        }
+        return arr.filter(t => t%3 ===0 || t%5===0 ).reduce((sum, current) => sum + current, 0)
+      //  return number < 1 ? 0 : [...new Array(number).keys()].filter(n => n % 3 == 0 || n % 5 == 0).reduce((a, b) => a + b);
+    }
+
+</script>
+

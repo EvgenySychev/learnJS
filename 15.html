@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+
+    function sumTwoSmallestNumbers(numbers) {
+        numbers.sort((a,b)=> a-b)
+        return numbers[0]+numbers[1]
+    }
+
+</script>
+
+assert.strictEqual(sumTwoSmallestNumbers([5, 8, 12, 19, 22]), 13

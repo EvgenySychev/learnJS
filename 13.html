@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+
+    function accum(s) {
+        let arr = s.split('')
+        let result=''
+        for (let i=0; i<arr.length;i++) {
+
+            for (let j=0; j<=i; j++){
+                if (j===0) {
+                    result += arr[i].toUpperCase()
+                } else {
+                    result += arr[i].toLowerCase()
+                }
+            }
+            if (i<arr.length-1) {
+                result += '-'
+            }
+
+
+        }
+
+        return result
+    }
+
+</script>
+<!--accum("abcd") -> "A-Bb-Ccc-Dddd"
+accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+accum("cwAt") -> "C-Ww-Aaa-Tttt"-->
